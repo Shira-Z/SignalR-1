@@ -10,7 +10,7 @@ namespace SignalR
 {
     public class Connection : IConnection, ITransportConnection, ISubscriber
     {
-        private readonly IMessageBus _bus;
+        private readonly INewMessageBus _bus;
         private readonly IJsonSerializer _serializer;
         private readonly string _baseSignal;
         private readonly string _connectionId;
@@ -20,7 +20,7 @@ namespace SignalR
         private bool _aborted;
         private readonly Lazy<TraceSource> _traceSource;
 
-        public Connection(IMessageBus newMessageBus,
+        public Connection(INewMessageBus newMessageBus,
                           IJsonSerializer jsonSerializer,
                           string baseSignal,
                           string connectionId,

@@ -26,4 +26,3 @@ PublishProfiles/
 *.log
 SignalR.Client.JS.Tests/temp/*
 SignalR.Client.JS.Tests/CommandLineBridge.js
-*.vspx
